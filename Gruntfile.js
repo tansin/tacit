@@ -34,11 +34,12 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
-            sourceMap: true,
-            outputStyle: 'compressed'
+            sourceMap: false,
+            outputStyle: 'expanded'
           },
           files: {
-            'tacit.min.css': 'scss/main.scss'
+            'tacit.css': 'scss/main.scss',
+            '../eplan/react-report/public/tacit.css': 'scss/main.scss'
           }
         },
         dist: {

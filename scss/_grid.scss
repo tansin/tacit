@@ -60,25 +60,29 @@ form,
 fieldset,
 figure,
 address {
-  margin-bottom: 1.65 * $em;
+  @include margin-bottom-but-last($line-height);
 }
 
 section {
   margin-left: auto;
   margin-right: auto;
   width: 50 * $em;
+
+  @include margin-bottom-but-last($line-height);
 }
 
 article,
 header,
 footer {
-  padding: 2.4 * $em;
+  padding: $line-height;
+
+  @include margin-bottom-but-last($line-height);
 }
 
 article {
   background: $white;
   border: 1px solid lighten($black, 85);
-  border-radius: .4 * $em;
+  border-radius: .2 * $em;
 }
 
 nav {

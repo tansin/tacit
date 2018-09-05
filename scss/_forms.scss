@@ -144,7 +144,7 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
   flex-grow: 0;
-  height: 1.65 * $em;
+  height: $line-height;
   margin-left: 0;
   margin-right: .5 * $em;
   vertical-align: middle;

@@ -22,6 +22,7 @@
 
 // sizes
 $em: 18px;
+$line-height: 1.00 * $em;
 
 // fonts
 $sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -45,5 +46,12 @@ $mobile-width: 767px;
   font-stretch: normal;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.65 * $em;
+  line-height: $line-height;
+}
+
+@mixin margin-bottom-but-last($margin) {
+  margin-bottom: $margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
