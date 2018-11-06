@@ -24,6 +24,7 @@
 
 const fs = require('fs')
 const child_process = require('child_process')
+const sass = require('node-sass')
 
 module.exports = function (grunt) {
   'use strict';
@@ -34,6 +35,7 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
+            implementation: sass,
             sourceMap: false,
             outputStyle: 'expanded'
           },

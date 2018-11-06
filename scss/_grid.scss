@@ -45,7 +45,6 @@ html {
 body {
   background: darken($white, 4);
   color: lighten($black, 10);
-  padding: 2 * $em;
 }
 
 p,
@@ -60,29 +59,31 @@ form,
 fieldset,
 figure,
 address {
-  @include margin-bottom-but-last($line-height);
+  margin-bottom: $line-height;
+}
+
+main {
+  padding: 2 * $em;
 }
 
 section {
+  margin-bottom: $line-height;
   margin-left: auto;
   margin-right: auto;
-  width: 50 * $em;
-
-  @include margin-bottom-but-last($line-height);
+  max-width: 81 * $em;
 }
 
 article,
 header,
 footer {
+  margin-bottom: $line-height;
   padding: $line-height;
-
-  @include margin-bottom-but-last($line-height);
 }
 
 article {
   background: $white;
   border: 1px solid lighten($black, 85);
-  border-radius: .2 * $em;
+  border-radius: 4px;
 }
 
 nav {
